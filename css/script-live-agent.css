@@ -1,0 +1,48 @@
+.embeddedServiceHelpButton .helpButton .uiButton {
+    background-color: #005290 !important;
+    font-family: "Salesforce Sans", sans-serif !important;
+}
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: 1px solid #005290 !important;
+}
+
+
+.slds-input{
+    padding: 0 1rem 0 .75rem !important;
+    border: solid 1px #e1e3e6 !important;
+    border: 1px solid #dddbda !important;
+    border-radius: .25rem !important;
+    width: 100% !important;
+    margin: 2px 0 15px 0 !important;
+    transition: border .1s linear,background-color .1s linear !important;
+    display:inline-block !important;
+    line-height: 1.875rem !important;
+    min-height: calc(1.875rem + (1px * 2)) !important;
+}
+
+.slds-input:focus{
+background-color:#FFF !important;
+}
+
+.slds-form-element__label{
+float: none !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-weight: normal;
+    padding-right: .5rem;
+    padding-top: .25rem;
+}
+
+li > a{
+    color: #FFF;
+}
+
+h2, h3 {
+    line-height: 130%;
+    font-weight: 400;
+}
+
+h3 {
+    margin: 1em 0;
+    font-size: 1.17em !important;
+}

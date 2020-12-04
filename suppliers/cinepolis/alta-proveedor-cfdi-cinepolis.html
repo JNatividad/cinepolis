@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="es" dir="LTR">
+<head>
+<meta http-equiv="Content-Language" content="es-mx">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index, nofollow">
+<meta name="description" content="Formulario de alta en el servicio de Facturación electrónica CFDI de Operadora Comercial de Desarrollo SA de CV (CINEPOLIS). La infraestructura de este servicio es ofrecida por Edicom.">
+<title>Operadora Comercial de Desarrollo SA de CV (CINEPOLIS) | Servicio de Facturación Electrónica </title>
+<link rel="stylesheet" type="text/css" href="../../skins/edicomWebStyle2012/css/web.css">
+<link rel="stylesheet" type="text/css" href="../../skins/cinepolis/css/web_custom.css">
+<link rel="stylesheet" type="text/css" href="../../skins/edicomWebStyle2012/css/dhtmlx.css">
+<script type="text/javascript" language="JavaScript" src="../../skins/edicomWebStyle2012/css/skin.js"></script>
+<script type="text/javascript" language="JavaScript" src="datos.js"></script>
+<!-- Funciones -->
+<script type="text/javascript" language="JavaScript" src="../../archivos/js/validation.js"></script>
+<script type="text/javascript" language="JavaScript" src="../../archivos/js/library.js"></script>
+<script type="text/javascript">
+function validar() {
+	//Datos fiscales
+   var form =document.forms['Form2'];
+   if(IsEmpty(document.getElementById('rfc'))) {  
+	  alert('El RFC es obligatorio');
+	  document.getElementById('rfc').focus();
+      return false;
+   }
+   if (!validaRfc(document.getElementById('rfc').value)){
+      alert('El RFC no es correcto');
+	  document.getElementById('rfc').focus();
+      return false;
+   }
+   if(IsEmpty(document.getElementById('ANY_CODINTERNO'))) {  
+	      alert('El "ID Proveedor" es obligatorio');
+		  document.getElementById('ANY_CODINTERNO').focus();
+		  return false;
+	}
+   if (!isAlphaNumeric(document.getElementById('ANY_CODINTERNO'))){
+	   alert('El formato del "ID Proveedor" no es correcto');
+	   document.getElementById('ANY_CODINTERNO').focus();
+	   return false;
+   }
+   if(IsEmpty(document.getElementById('nombre'))) {  
+	  alert('El nombre es obligatorio');
+	  document.getElementById('nombre').focus();
+      return false;
+   }
+  
+   if(IsEmpty(document.getElementById('direccion'))) {  
+		  alert('El campo calle es obligatorio');
+		  document.getElementById('direccion').focus();
+	      return false;
+	   }
+	   
+	   if(IsEmpty(document.getElementById('municipio'))) {  
+		  alert('El municipio es obligatorio');
+		  document.getElementById('municipio').focus();
+	      return false;
+	   }
+	    if(IsEmpty(document.getElementById('cp'))) {  
+		  alert('El código postal es obligatorio');
+		  document.getElementById('cp').focus();
+	      return false;
+	   }
+	   if(IsEmpty(document.getElementById('estado'))) {  
+		  alert('El estado es obligatorio');
+		  document.getElementById('estado').focus();
+	      return false;
+	   }
+	   if(IsEmpty(document.getElementById('regFiscal'))) {  
+			  alert('El régimen fiscal es obligatorio');
+			  document.getElementById('regFiscal').focus();
+		      return false;
+	}
+	if(IsEmpty(document.getElementById('lugarExpedicion'))) {  
+			  alert('El lugar de expedición es obligatorio');
+			  document.getElementById('lugarExpedicion').focus();
+		      return false;
+		}
+   
+   if(IsEmpty(document.getElementById('fPersonaContactoEmail'))) {  
+	  alert('El email de la persona de contacto es obligatorio');
+	  document.getElementById('fPersonaContactoEmail').focus();
+      return false;
+   }
+    if(!emailCheck(Trim(document.getElementById('fPersonaContactoEmail').value))){
+		alert('Formato de email de la persona de contacto incorrecto');
+		document.getElementById('fPersonaContactoEmail').focus();
+		return false;
+	}
+	if (Trim(document.getElementById('fPersonaContactoEmail').value) != Trim(document.getElementById('fPersonaContactoEmail2').value)){
+	    document.getElementById('fPersonaContactoEmail').value='';
+		document.getElementById('fPersonaContactoEmail2').value='';
+        alert('Las dos direcciones de correo deben de ser iguales');
+		document.getElementById('fPersonaContactoEmail').focus();
+		return false;
+    }
+	
+
+	//Pregunta y respuesta
+	  if(IsEmpty(document.getElementById('fRecuperarPregunta'))) {  
+	  alert('La pregunta y la respuesta de seguridad son obligatorias');
+	  document.getElementById('fRecuperarPregunta').focus();
+      return false;
+   }
+       if(IsEmpty(document.getElementById('fRecuperarRespuesta'))) {  
+	  alert('La pregunta y la respuesta de seguridad son obligatorias');
+	  document.getElementById('fRecuperarRespuesta').focus();
+      return false;
+   }
+       
+       //Persona de contacto
+       if(IsEmpty(document.getElementById('fPersonaContactoNombre'))) {  
+    		  alert('La persona de contacto es obligatoria');
+    		  document.getElementById('fPersonaContactoNombre').focus();
+    	      return false;
+    	   }
+    	    
+    	    if(IsEmpty(document.getElementById('fPersonaContactoTelefono'))) {  
+    		  alert('El teléfono de la persona de contacto es obligatorio');
+    		  document.getElementById('fPersonaContactoTelefono').focus();
+    	      return false;
+    	   }
+    
+       //Certificado
+       if(IsEmpty(form.datafile))  {
+           alert('Es obligatorio proporcionar el fichero de la clave privada (.cer)');
+           return false;
+        }
+        if (!checkExtension(form.datafile.value,'cer')) {
+
+          alert('Debe seleccionar un fichero con extensión cer');
+          return false;
+        }
+    if (document.getElementById('aceptarTerminos').checked != true) {
+		alert('Debe aceptar los términos de uso para poder seguir');
+		document.getElementById('aceptarTerminos').focus();
+		return false;
+	}
+   
+   return true;
+}
+function validaEmail1(){
+      var email = document.getElementById('fPersonaContactoEmail');
+      
+      if(emailCheck(Trim(document.getElementById('fPersonaContactoEmail').value))&&(!IsEmpty(email))){
+        confirmaEmail();
+      }
+    }
+
+    function confirmaEmail(){
+       if (Trim(document.getElementById('fPersonaContactoEmail').value) == Trim(document.getElementById('fPersonaContactoEmail2').value)){
+         return true;
+       }
+       var fin = false;
+       do{
+           aux = prompt('Por favor, repita su Email para confirmarlo','');
+           if (aux == null){
+             fin = true;
+             document.getElementById('fPersonaContactoEmail2').value = '';
+           } else{
+             document.getElementById('fPersonaContactoEmail2').value = aux;
+             if (emailsIguales()){
+               fin = true;
+             }
+           }
+       } while (fin == false)
+    }
+
+    function emailsIguales(){
+      var email1_ = document.getElementById('fPersonaContactoEmail');
+      var email2_ = document.getElementById('fPersonaContactoEmail2');
+      if (Trim(email1_.value) != Trim(email2_.value)){
+        alert('Los emails no coinciden. Por favor, vuelva a confirmar su nuevo Email');
+        return false;
+      }
+      return true;
+    }
+function aceptar(){
+    var form =document.forms['Form2'];    
+	if (validar()) {
+		//ID de Proveedor, código asignado en el PeopleSoft de Cinépolis. 
+		//Este código se utiliza luego en la addenda de los comprobantes. 
+		//Es un dato de 10 caracteres, alfanumérico y completado con ceros 
+		//a la izquierda para completar los 10 caracteres.
+		var idProveedor = document.getElementById('ANY_CODINTERNO').value;
+		if (idProveedor.length<10) {
+			for (var i=idProveedor.length;i<10;i++){
+				idProveedor='0'+idProveedor;
+			}
+			document.getElementById('ANY_CODINTERNO').value=idProveedor;
+		}		
+		
+		form.action='https://webportal.edicomgroup.com/EdiwinViewer/ejecutaFuncion';
+		//form.action='http://localhost:8080/EdiwinViewer/ejecutaFuncion';
+		deshabilitar();
+		form.submit();
+   }
+}
+</script>
+<script language="javascript" type="text/javascript">
+function init(){
+	skin.cargarHeader()
+	skin.cargarTitulo()
+	skin.cargarIntro()
+	skin.cargarWebformP(0)
+	skin.cargarPageFooter()
+}
+</script>
+</head>
+<body class="fondo" onLoad="init()">
+<div class="wcag_main">
+<div class="wcag_content">
+<div class="cabecera" id="pageHeader">
+	<div class="decoracion" id="idDecoracion">
+		<div class="enlace">
+		</div>
+		<div class="logo">
+			<div class="logoHeader" id="logoHeader">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="botoneraSuperior" id="webMenu"></div>
+<div class="cuerpo" id="pageBody">
+	<div class="colCentro">
+		<div class="titulo" id="webTitulo"></div>
+		<!-- FORMULARIO -->
+		<div class="divForm" id="webForm">
+			<div class="formHeader" id="formHeader">
+				<!-- Contenido extraido de datos.js -->
+			</div>
+			<div class="formBody">
+				<form name="Form2" action="" enctype="multipart/form-data" method="post">
+					<input type="HIDDEN" name="op" id="op" value="3"/>
+					<input type="HIDDEN" name="tipocliente" id="tipocliente" value="anonimo"/>
+					<input type="HIDDEN" name="pais" id="pais" value="MX"/>
+					<input type="HIDDEN" name="master" id="master" value="$MASTER$"/>
+					<input type="HIDDEN" name="dominio" id="dominio" value="OCD051219680_PP"/>														
+					<input type="HIDDEN" name="urlOK" id="urlOK" value="http://webportal.edicomgroup.com/suppliers/cinepolis/success.html"/>
+					<input type="HIDDEN" name="urlERROR" id="urlERROR" value="http://webportal.edicomgroup.com/suppliers/cinepolis/error.html"/>					
+					<fieldset>
+					<legend> Datos Fiscales:</legend>
+					<span class="campo">
+					<label name="label_rfc" for="rfc" class="obligatorio">RFC:<span>*</span></label>
+					<input name="rfc" id="rfc" value="" maxlength="35" size="35"/>
+					</span>
+					<span class="campo">
+					<label name="label_ANY_CODINTERNO" for="ANY_CODINTERNO" class="obligatorio">ID proveedor:<span>*</span></label>
+					<input name="ANY_CODINTERNO" id="ANY_CODINTERNO" value="" maxlength="10" size="10"/>
+					</span>
+					<span class="campoDoble">
+					<label id="label_nombre" for="nombre" class="obligatorio">Nombre:<span>*</span></label>
+					<input name="nombre" id="nombre" value="" maxlength="70" size="70"/>
+					</span>
+					
+					<span class="campoDoble">
+					<label id="label_direccion" for="direccion" class="obligatorio">Calle:<span>*</span></label>
+					<input name="direccion" id="direccion" value="" maxlength="70" size="70"/>
+					</span>
+					<span class="campo">
+					<label id="label_nInterior" for="nInterior">Nº interno:<span></span></label>
+					<input name="nInterior" id="nInterior" value="" maxlength="30" size="30"/>
+					</span>
+					<span class="campo">
+					<label id="label_nExterior" for="nExterior">Nº externo:<span></span></label>
+					<input name="nExterior" id="nExterior" value="" maxlength="30" size="30"/>
+					</span>
+					<span class="campo">
+					<label id="label_municipio" for="municipio" class="obligatorio">Municipio:<span>*</span></label>
+					<input name="municipio" id="municipio" value="" maxlength="70" size="70"/>
+					</span>
+					<span class="campo">
+					<label id="label_cp" for="cp" class="obligatorio">Código Postal:<span>*</span></label>
+					<input name="cp" id="cp" value="" maxlength="10" size="10"/>
+					</span>
+					<span class="campo">
+					<label id="label_estado" for="estado" class="obligatorio">Estado:<span>*</span></label>
+					<input name="estado" id="estado" value="" maxlength="70" size="70"/>
+					</span>
+					<span class="campo">
+					<label id="label_colonia" for="colonia">Colonia:<span></span></label>
+					<input name="colonia" id="colonia" value="" maxlength="70" size="70"/>
+					</span>
+					<span class="campoDoble">
+					<label id="label_regFiscal" for="regFiscal" class="obligatorio">Régimen fiscal:<span>*</span></label>
+					<input name="regFiscal" id="regFiscal" value="" maxlength="255" size="255"/>
+					</span>
+					<span class="campoDoble">
+					<label id="label_lugarExpedicion" for="lugarExpedicion" class="obligatorio">Lugar expedición:<span>*</span></label>
+					<input name="lugarExpedicion" id="lugarExpedicion" value="" maxlength="255" size="255"/>
+					</span>									
+					</fieldset>
+					<fieldset>
+					<legend> Datos para recuperar la contraseña </legend>
+					<span class="campo">
+					<label id="label_fRecuperarPregunta" for="fRecuperarPregunta" class="obligatorio"> Pregunta:<span>*</span></label>
+					<input size="50" name="fRecuperarPregunta"  id="fRecuperarPregunta"></span>
+					<span class="campo">
+					<label id="label_fRecuperarRespuesta" for="fRecuperarRespuesta" class="obligatorio"> Respuesta:<span>*</span></label>
+					<input size="50" name="fRecuperarRespuesta"  id="fRecuperarRespuesta" >
+					</span>
+					<span class="campo">
+					<label id="label_fPersonaContactoEmail" for="fPersonaContactoEmail" class="obligatorio">E-mail:<span>*</span></label>
+					<input size="50" name="fPersonaContactoEmail" id="fPersonaContactoEmail" onChange="validaEmail1()">
+					</span>
+					<span class="campo">					
+					<label id="label_fPersonaContactoEmail2" for="fPersonaContactoEmail2" class="obligatorio">Confirmar E-mail:<span>*</span></label>
+					<input size="50" name="fPersonaContactoEmail2" id="fPersonaContactoEmail2" onClick="validaEmail1()">
+					</span>
+					</fieldset>
+					<fieldset>
+					<legend>Persona de contacto</legend>
+					<span class="campoDoble">
+					<label id="label_fPersonaContactoNombre" for="fPersonaContactoNombre" class="obligatorio">Nombre:<span>*</span></label>
+					<input name="fPersonaContactoNombre" id="fPersonaContactoNombre" value="" maxlength="255" size="255"/>
+					</span>	
+					<span class="campoDoble">
+					<label id="label_fPersonaContactoTelefono" for="fPersonaContactoTelefono" class="obligatorio">Teléfono:<span>*</span></label>
+					<input name="fPersonaContactoTelefono" id="fPersonaContactoTelefono" value="" maxlength="255" size="255"/>
+					</span>
+					</fieldset>	
+					
+					<fieldset>
+					<legend>Importar clave pública (.cer)</legend>
+					<span class="campo">
+					<label id="label_datafile" for="datafile" class="obligatorio">Clave pública <span>*</span></label>
+					<input class="normal" type="file" name="datafile" id="datafile" size="40">
+					<span class="ejemplo">Fichero de clave publica (Fichero con extensión *.cer) </span>
+					</span>
+					<br>
+					<div id="panelAyudaCertificados" class="ejemplo">
+					<!-- Contenido extraido de datos.js -->
+					</div>
+					</fieldset>
+					
+					<div class="botoneraInferior">
+						<div id="divAceptar">
+							<span class="check">
+							<input type="checkbox" name="aceptarTerminos" id="aceptarTerminos" value="OK">
+							<label id="label_aceptarTerminos" for="aceptarTerminos" >Declaro haber le&iacute;do y aceptado los
+							<a href="javascript:void(0)" onclick="javascript:skin.loadToS('cfdi','cinepolis')">t&eacute;rminos de uso</a>
+							y la 
+							<a  href="javascript:void(0)" onclick="javascript:skin.loadPrivacy('cinepolis')">pol&iacute;tica de privacidad.</a> 
+							*</label>
+							</span>
+							<br>
+						</div>
+						<button id="boton_aceptar" title="Enviar" TYPE="BUTTON" OnClick="aceptar();" >Enviar</button>
+						<button id="boton_limpiar" title="Limpiar" TYPE="RESET" OnClick="" >Limpiar</button>
+					</div>
+					<div class="formBottom" id="formBottom">
+					<!-- Contenido extraido de datos.js -->
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="wcag_footer">
+  <div id="pageFooter" class="marcopieinferior"> </div>
+</div>
+
+</body>
+</html>

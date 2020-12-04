@@ -1,0 +1,20 @@
+body {
+    background: url("../../marcas/id/mx/imagenes/sitio/fondo-id.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+}
+body .header-cinepolis-id {
+  background: #0b5ba0;
+  margin-bottom: 1.8%;
+  padding: 1%;
+  text-align: center;
+}
+body .header-cinepolis-id a {
+  display: block;
+  margin: 0 auto;
+  max-width: 120px;
+  width: 100%;
+}
+body .header-cinepolis-id a img {
+  width: 100%;
+}

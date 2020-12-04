@@ -1,0 +1,45 @@
+@media screen and (max-width: 920px){.imgTopPhone > figure{height:350px}
+.imgTopPhone > div h2{color:#fff;font-size:1.5em}
+.imgTopInclusite > div h2{color:#000;font-size:1.6em}
+.btnActivar{padding:8px 30px}
+}@media screen and (max-width: 800px){section.inclusite ul li figure{margin:0 15px 80px 0}
+}@media screen and (max-width: 750px){.imgTopInclusite > div h2{color:#000;font-size:1.4em}
+.btnActivar{padding:8px 10px}
+section.inclusite{margin-top:40px}
+}@media screen and (max-width: 700px){.imgTopPhone > figure{height:300px}
+.imgTopPhone > div h2{color:#fff;font-size:1.3em}
+.imgTopPhone > div p{font-size:1.2em}
+.g960{width:96%;margin-left:2%;margin-right:2%}
+.imgTopCiudades{height:200px;}
+.imgTopCiudades > figure{height:200px}
+.imgTopCiudades > div{top:100px;}
+.imgTopCiudades > div h2{color:#fff;font-size:1.3em}
+.imgTopCiudades > div p{font-size:1.2em}
+.listCiudad .col4{width:100%;float:none;margin-left:0;margin-bottom:20px}
+section.inclusite ul li.col6{width:100%;float:none;margin:0;margin-bottom:20px;clear:both;}
+section.inclusite ul li.col6 figure{margin:0 15px 30px 0}
+.btnActivar{font-size:24px;padding:8px 10px;width:100%}
+}@media screen and (max-width: 650px){.imgTopInclusite{height:auto;}
+.imgTopInclusite > div{top:0}
+.imgTopInclusite .col7{display:none}
+.imgTopInclusite .col5{width:100%;margin:0;float:none;padding:1px;padding-bottom:20px}
+}@media screen and (max-width: 580px){.imgTopPhone > figure{height:200px}
+.imgTopPhone > div{top:20px;}
+.imgTopPhone > div h2{color:#fff;font-size:1em}
+.imgTopPhone > div p{font-size:1.2em}
+.phones .col1-5{width:30%;margin-bottom:5%}
+.imgTopCiudades{height:150px;}
+.imgTopCiudades > figure{height:150px}
+.imgTopCiudades > div{top:60px;}
+.imgTopCiudades > div h2{color:#fff;font-size:1em}
+.imgTopCiudades > div p{font-size:1em}
+.listaCiudades section .navOpciones li{padding:10px 2px;font-size:1em}
+section.inclusite p{font-size:18px}
+}@media screen and (max-width: 480px){.imgTopPhone .col7,.imgTopPhone .col5{width:100%;float:none;margin-left:0}
+.imgTopPhone > div h2{color:#0b5ba1}
+.imgTopPhone > div p{color:#000}
+}@media screen and (max-width: 400px){section.inclusite ul li.col6 figure{margin:0 15px 80px 0}
+section.inclusite .inclusiteMovil .col4{display:none}
+section.inclusite .inclusiteMovil .col8{width:100%;float:none}
+section.inclusite ul li p{font-size:14px}
+}

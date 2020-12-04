@@ -1,0 +1,198 @@
+body {
+   background: #13a7de;
+   margin: 0;
+   padding: 0;
+}
+.panel {
+	clear: both;
+	display: table;
+	margin: auto;
+	max-width: 960px;
+    width: 100%;
+}
+.title {
+	margin-top: 20px;
+	text-align: center;
+}
+.subtitle {
+	text-align: center;
+	margin-top: 25px;
+}
+section {
+	margin-top: -10px;
+}
+.descuento {
+	text-align: center;
+	width: 100%;
+}
+.restricciones {
+	color: #fff;
+	font-family: helvetica,arial;
+	font-size: 12px;
+	text-align: justify;
+	margin: 30px 5px;
+}
+.restricciones .aplica{
+	text-align: center;
+	font-weight: bolder;
+	color: #fff;
+}
+.aplica .aplicaBold{
+	font-size: 20px;
+	border-bottom: solid 1px #fff;
+	width: 75%;
+	margin: 0 auto;
+}
+.restricciones .no-aplica{
+	text-align: center;
+	font-weight: bolder;
+	color: #363636;
+	margin: 1em auto;
+}
+.no-aplica .no-aplicaBold{
+	font-size: 20px;
+	border-bottom: solid 1px #005879;
+	width: 75%;
+	margin: 0 auto;
+}
+.restricciones ul{
+	display: inline-block;
+	margin-top: 1%;
+	padding: 0 2%;
+	vertical-align: middle;
+}
+.restricciones ul li{
+	display: block;
+	text-align: left;
+}
+.restricciones a{
+	display: block;
+	width: 12em;
+	margin: 1em auto;
+	padding: .5em;
+	text-align: center;
+	background: #1975bc;
+	border-radius: 1.5em;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, .6);
+}
+.restricciones a:hover{
+	box-shadow: 0px 0px;
+}
+sup {
+	font-size: 7px;
+}
+.cinepolis {
+	background: #00599c;
+	border-radius: 0px 15px 15px 0px;
+	height: 80px;
+	text-align: right;
+}
+.cinepolis-vip {
+	background: #231f20;
+	border-radius: 15px 0px 0px 15px;
+	display: block;
+	height: 80px;
+}
+.redes {
+	color: #ffffff;
+	font-family: helvetica,arial;
+	height: 90px;
+	text-align: center;
+}
+.redes li {
+    height: 8px;
+    list-style: none outside none;
+    padding: 0 9px;
+}
+p ul, ul li {
+	display: inline-block;
+	text-decoration: none;
+}
+.redes ul {
+	margin-left: -40px;
+}
+.redes ul li {
+	float: left;
+}
+.redes p, .redes ul {
+    display: inline-block;
+    vertical-align: super;
+}
+.col2.sufix30.redes img {
+	height: 25px;
+}
+ul {
+	margin: 0px;
+}
+.rssfeed {
+	color: #ffffff;
+	font-family: helvetica,arial;
+	font-size: 16px;
+	font-weight: 10px;
+	margin-top: 7px;
+	text-align: center;
+}
+.col3.sufix20.rssfeed img {
+    height: 20px;
+}
+p span {
+	display: inline-block;
+	text-decoration: none;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+.liga-cine {
+	margin-top: -10px;
+}
+.col2.sufix30.redes > p {
+    margin-bottom: 8px;
+}
+.rssfeed p, .rssfeed img {
+    display: inline-block;
+    vertical-align: middle;
+}
+@media all and (max-width: 360px) {	
+	.panel {
+		min-width: 320px;
+	}
+	.title > img, .subtitle > img, .descuento > img {
+		width: 320px;
+	}
+	section {
+		margin: 0px;
+	}
+	.cinepolis, .cinepolis-vip {
+		height: 50px;
+	}
+	.cinepolis {
+		border-radius: 0px 10px 10px 0px;
+	}
+	.cinepolis-vip {
+		border-radius: 10px 0px 0px 10px;
+	}
+	.col2.sufix30.redes {
+    	margin-left: 8%;
+   		width: 42%;
+	}
+	.col3.sufix20.rssfeed {
+	    font-size: 13px;
+	    margin-left: 2%;
+	    margin-top: 12px;
+	    width: 47%;
+	}
+
+}
+.redes {
+	display:none;
+}
+
+.rssfeed {
+	width: 100%;
+	text-align: center;
+	margin: 0 !important;
+}
+.rssfeed a:nth-child(3) {
+    display: block;
+}

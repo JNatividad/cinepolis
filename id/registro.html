@@ -1,0 +1,529 @@
+﻿
+
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>
+	Registro Cinépolis ID
+</title><meta name="description" content="Regístrate y obtén tu identificación como usuario de Cinépolis."><meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0"><meta id="IdGoogle" name="google-signin-clientid" content="689027481079-kie1ta7fuuberbce4v2sl5aijo4c13ai.apps.googleusercontent.com"><meta name="google-signin-scope" content="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read"><meta name="google-signin-cookiepolicy" content="single_host_origin">
+    
+
+    <!-- Css -->
+    <!-- Elementos de la master de Cinépolis -->    
+    <link href="css/alertify.core.css" rel="stylesheet"><link href="css/alertify.default.css" rel="stylesheet"><link rel="stylesheet" href="../css/reset.css"><link rel="stylesheet" href="../css/master.css"><link rel="stylesheet" href="css/master-id.css"><link rel="stylesheet" href="../css/responsive-master.css"><link rel="stylesheet" href="../css/responsive-1.css">
+
+    
+    <!-- CrossBrowser -->
+
+    <!--[if lt IE 10]>
+			<script type="text/javascript"  src="scripts/html5.js"></script>
+			<script type="text/javascript"  src="scripts/modernizr.js"></script>
+		<![endif]-->
+
+    <!-- Elementos de la master de Cinépolis -->
+    
+    <script src="../scripts/jquery-1.10.0.min.js" type="text/javascript"></script>
+	<script src="../scripts/jquery-plugins.js" type="text/javascript"></script>
+	<script src="../scripts/action.js" type="text/javascript"></script>
+
+    <script src="scripts/google.plus.connect.pkg.js"></script>
+    <script src="scripts/google.plus.login.pkg.js"></script>
+
+    <script src="scripts/jquery.ui.core.js"></script>
+    <script src="scripts/jquery.ui.widget.js"></script>
+    <script src="scripts/jquery.ui.mouse.js"></script>
+    <script src="scripts/jquery.ui.draggable.js"></script>
+    <script src="scripts/jquery.ui.droppable.js"></script>
+    <script src="scripts/jquery.nicescroll.3.5.0.min.js"></script>
+    <script src="scripts/alertify.min.js"></script>
+    <script src="scripts/jquery.fortaleza.contrasena.js"></script>
+    <script src="scripts/registro.js"></script>
+
+    <script src="scripts/jquery.utilidades.pkg.js"></script>
+    
+    <script src="scripts/facebook.registrar.pkg.js"></script>
+
+    </head>
+<body>
+        <!-- Google Tag Manager -->
+        <noscript><iframe src="../ns.html?id=GTM-M66T72" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M66T72');</script>
+        <!-- End Google Tag Manager -->
+
+    <form method="post" action="./registro" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="308B0CE4">
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
+    <div>
+        
+        
+    
+    
+
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Describe el proyecto">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0">
+
+    <!-- Css -->
+	<!-- Elementos de la master de Cinépolis -->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/master.css">
+	<!-- <link rel="stylesheet" href="../css/master-id.css"> -->
+
+	<link rel="stylesheet" href="css/master-id.css">
+
+	<link rel="stylesheet" href="css/registro-extras.css">
+
+	<link rel="stylesheet" href="../css/responsive-master.css">
+	<link rel="stylesheet" href="../css/responsive-1.css">
+    
+    <script src="../scripts/jquery-1.10.0.min.js"></script>
+	<script src="../scripts/jquery-plugins.js"></script>
+	<script src="../scripts/action.js"></script>
+
+    <script src="scripts/google.plus.login.pkg.js"></script>
+    <script src="scripts/google.plus.connect.pkg.js"></script>
+    <script src="scripts/jquery.fortaleza.contrasena.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            window.alert = function (e) {
+                jsUtil.fancyAlert(e.toString().replace(/\-/ig, "<br />-"), "Aceptar");
+            }
+
+            $(".btnSubmit").click(function () {
+
+                if (Page_ClientValidate('registro') == true) {
+                    $("form").submit();
+                }
+
+                return false;
+            });
+
+            $("input:text, input:password").keypress(function (key) {
+                if (key.keyCode == 13) {
+                    $(".btnSubmit").trigger("click");
+                    return false;
+                }
+            });
+
+            $(".registroFacebook").click(function () {
+                FaceBookLoign.login();
+                return false;
+            });
+
+            $(".noPaste").bind('paste', function () {
+                alert("Te recomendamos volver a escribir tu " + $(this).attr("rel") + ".");
+                return false;
+            });
+
+            $(".fortalezaContrasena").passwordMeter({});
+
+            $("#register_content_ucRegistro_txtPassword, #register_content_ucRegistro_txtPasswordConfirm").keyup(function () {
+
+                $("#register_content_ucRegistro_txtPasswordConfirm").removeClass("confirmPassSi");
+                $("#register_content_ucRegistro_txtPasswordConfirm").removeClass("confirmPassNo");
+
+                if ($("#register_content_ucRegistro_txtPasswordConfirm").val() != "") {
+                    if ($("#register_content_ucRegistro_txtPassword").val() == $("#register_content_ucRegistro_txtPasswordConfirm").val()) {
+                        $("#register_content_ucRegistro_txtPasswordConfirm").addClass("confirmPassSi");
+                    } else {
+                        $("#register_content_ucRegistro_txtPasswordConfirm").addClass("confirmPassNo");
+                    }
+                }
+            });
+
+        });
+
+        function ClientValidateTerminosyCondiciones(source, arguments) {
+            arguments.IsValid = $("#cbRegTerminos").is(':checked');
+        }
+
+        function ClientValidateCaptcha(source, arguments) {
+            arguments.IsValid = $("#cbkCaptcha").is(':checked');
+        }
+        //indicadorContrasena
+    </script>
+    <script src='../recaptcha/api.js?hl=es-419'></script>
+
+        <!-- Begin Digital Analytix Tag 1.1302.13 -->
+    <script type="text/javascript">
+        var pathComScore;
+        function getUrl() {
+            var pathname = window.location.pathname.replace(/^\/+/g, '').replace(/\/+$/g, '');
+            if (pathname == "")
+                pathComScore = "home.portada";
+            else if (pathname.indexOf("/") == -1)
+                pathComScore = pathname + ".portada";
+            else {
+                pathComScore = pathname.split("/").join(".");
+            }
+        }
+        getUrl();
+
+        function udm_(e) { var t = "comScore=", n = document, r = n.cookie, i = "", s = "indexOf", o = "substring", u = "length", a = 2048, f, l = "&ns_", c = "&", h, p, d, v, m = window, g = m.encodeURIComponent || escape; if (r[s](t) + 1) for (d = 0, p = r.split(";"), v = p[u]; d < v; d++) h = p[d][s](t), h + 1 && (i = c + unescape(p[d][o](h + t[u]))); e += l + "_t=" + +(new Date) + l + "c=" + (n.characterSet || n.defaultCharset || "") + "&c8=" + g(n.title) + i + "&c7=" + g(n.URL) + "&c9=" + g(n.referrer), e[u] > a && e[s](c) > 0 && (f = e[o](0, a - 8).lastIndexOf(c), e = (e[o](0, f) + l + "cut=" + g(e[o](f + 1)))[o](0, a)), n.images ? (h = new Image, m.ns_p || (ns_p = h), h.src = e) : n.write("<", "p", "><", 'img src="', e, '" height="1" width="1" alt="*"', "><", "/p", ">") };
+        function uid_call(a, b) {
+            ui_c2 = 9732062; // your corporate c2 client value
+            ui_sitio = 'su-sitio'; // your sites identifier
+            window.b_ui_event = window.c_ui_event != null ? window.c_ui_event : "", window.c_ui_event = a;
+            var ui_pixel_url = '//b.scorecardresearch.com/p?c1=2&c2=' + ui_c2 + '&sitio=' + ui_sitio + '&name=' + a + '&ns_type=hidden&type=hidden&ns_ui_type=' + b;
+            var b = "comScore=", c = document, d = c.cookie, e = "", f = "indexOf", g = "substring", h = "length", i = 2048, j, k = "&ns_", l = "&", m, n, o, p, q = window, r = q.encodeURIComponent || escape; if (d[f](b) + 1) for (o = 0, n = d.split(";"), p = n[h]; o < p; o++) m = n[o][f](b), m + 1 && (e = l + unescape(n[o][g](m + b[h]))); ui_pixel_url += k + "_t=" + +(new Date) + k + "c=" + (c.characterSet || c.defaultCharset || "") + "&c8=" + r(c.title) + e + "&c7=" + r(c.URL) + "&c9=" + r(c.referrer) + "&b_ui_event=" + b_ui_event + "&c_ui_event=" + c_ui_event, ui_pixel_url[h] > i && ui_pixel_url[f](l) > 0 && (j = ui_pixel_url[g](0, i - 8).lastIndexOf(l), ui_pixel_url = (ui_pixel_url[g](0, j) + k + "cut=" + r(ui_pixel_url[g](j + 1)))[g](0, i)), c.images ? (m = new Image, q.ns_p || (ns_p = m), m.src = ui_pixel_url) : c.write("<p><img src='", ui_pixel_url, "' height='1' width='1' alt='*'></p>");
+        }
+        udm_('//b.scorecardresearch.com/b?c1=2&c2=9732062&sitio=cinepolis-site&name=' + pathComScore);
+    </script>
+    <noscript><p><img src="//b.scorecardresearch.com/p?c1=2&c2=9732062&sitio=cinepolis-site&name=no.javascript" height="1" width="1" alt="*"></p></noscript>
+    <!-- End Digital Analytix Tag 1.1302.13 -->
+    
+</head>
+<body>
+    
+        <div id="cinepolis-id">
+            <article class="panel" id="registro">
+            
+                <div class="header-cinepolis-id">
+            		<a href="http://www.cinepolis.com"><img src="../marcas/id/mx/imagenes/sitio/cinepolis-id-logo.png" alt="Logo Cinépolis ID">
+            		</a>
+            	</div>
+
+                <section>
+                    <h1>Registro</h1>
+                    <h4>Estás a un paso de acceder a todos los beneficios que Cinépolis<sup>®</sup> ID tiene para ti.</h4>
+
+                    <article class="form">
+                        <!-- Nombre + Correo electrónico -->
+                        
+
+                        <div class="campo row">
+                            <div class="campo id-col4">
+                                <label for="">Nombre</label>
+                                <input name="ctl00$register_content$ucRegistro$txtNombre" type="text" maxlength="50" id="txtNombre" class="nombre">
+                                
+                                
+                            </div>
+                            <div class="campo id-col4">
+                                <label for="">Apellido Paterno</label>
+                                <input name="ctl00$register_content$ucRegistro$txtApellidoPaterno" type="text" maxlength="50" id="txtApellidoPaterno" class="apellidos">
+                                
+                                
+                            </div>
+                            <div class="campo id-col4">
+                                <label for="">Apellido Materno</label>
+                                <input name="ctl00$register_content$ucRegistro$txtApellidoMaterno" type="text" maxlength="50" id="txtApellidoMaterno" class="apellidos">
+                                
+                            </div>
+                        </div>
+                        <div class="campo row">
+                            <label for="">Cinépolis<sup>®</sup> ID</label>
+                            <input name="ctl00$register_content$ucRegistro$txtCinepolisID" type="text" id="txtCinepolisID" autocomplete="off" placeholder="Tu dirección de correo electrónico">
+                            
+                            
+                        </div>
+                        <!-- Verificación -->
+                        <div class="campo row">
+                            <label for="">Verifica tu Cinépolis<sup>®</sup> ID</label>
+                            <input name="ctl00$register_content$ucRegistro$txtCinepolisIDVerific" type="text" id="register_content_ucRegistro_txtCinepolisIDVerific" class="noPaste" autocomplete="off" placeholder="Tu dirección de correo electrónico" rel="Cinépolis® ID">
+                            
+                            
+                            
+                        </div>
+                        <!-- Contraseña -->
+                        <div class="campo row">
+                            <label for="">Contraseña</label>
+                            <input name="ctl00$register_content$ucRegistro$txtPassword" type="password" id="register_content_ucRegistro_txtPassword" class="fortalezaContrasena" autocomplete="off">
+                            <span id="indicadorContrasena" class=""></span>
+                            
+                        </div>
+                        <div class="campo row">
+                            <label for="">Repetir contraseña</label>
+                            <input name="ctl00$register_content$ucRegistro$txtPasswordConfirm" type="password" id="register_content_ucRegistro_txtPasswordConfirm" class="noPaste" autocomplete="off" rel="contraseña">
+                            
+                            
+                        </div>
+                        <div class="campo row">
+                            <label for="">Tarjeta Club Cinépolis<sup>®</sup></label>
+                            <input name="ctl00$register_content$ucRegistro$txtTCC" type="text" maxlength="16" id="register_content_ucRegistro_txtTCC" class="tarjeta">
+                            
+                        </div>
+                        <!-- Pregunta seguridad -->
+                        <div class="campo row">
+                            <label for="">Pregunta de seguridad</label>
+                            <select name="ctl00$register_content$ucRegistro$ddlPreguntaSecreta" id="register_content_ucRegistro_ddlPreguntaSecreta" display="None">
+	<option value="1">&#191;C&#243;mo se llamaba tu primer mascota?</option>
+	<option value="2">&#191;Cu&#225;l fue el primer plato que aprendiste a cocinar?</option>
+	<option value="3">&#191;De qu&#233; modelo era tu primer auto?</option>
+	<option value="4">&#191;C&#243;mo se llama tu equipo favorito?</option>
+	<option value="5">&#191;En qu&#233; ciudad se conocieron tus padres?</option>
+	<option value="6">&#191;C&#243;mo se llamaba tu primer jefe?</option>
+	<option value="7">&#191;C&#243;mo se llama la calle donde creciste?</option>
+	<option value="8">&#191;C&#243;mo se llama la primera playa a la que fuiste?</option>
+	<option value="9">&#191;C&#243;mo se llamaba el primer &#225;lbum que compraste?</option>
+	<option value="10">&#191;Cu&#225;l ser&#237;a tu trabajo ideal?</option>
+	<option value="11">&#191;Cu&#225;l es tu libro infantil favorito?</option>
+	<option value="12">&#191;C&#243;mo se llama el mejor amigo de tu adolescencia?</option>
+	<option value="15">&#191;Cu&#225;l fue la primer pel&#237;cula que viste en Cin&#233;polis?</option>
+	<option value="16">&#191;A d&#243;nde fuiste la primera vez que viajaste en avi&#243;n?</option>
+
+</select>
+                            
+                        </div>
+                        <div class="campo row">
+                            <label for="">Respuesta</label>
+                            <input name="ctl00$register_content$ucRegistro$txtRespuestaPregSecret" type="text" id="register_content_ucRegistro_txtRespuestaPregSecret">
+                            
+                            
+                        </div>
+                        <!-- Pregunta seguridad -->
+                        <div class="campo row">
+                            <label for="">Fecha de nacimiento</label>
+                            <div class="row">
+                                <div class="id-col4">
+                                    <select name="ctl00$register_content$ucRegistro$ddlDia" id="ddlDia">
+	<option value="0">D&#237;a</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+
+</select>
+                                    
+                                </div>
+                                <div class="id-col4">
+                                    <select name="ctl00$register_content$ucRegistro$ddlMes" id="ddlMes">
+	<option value="0">Mes</option>
+	<option value="1">Enero</option>
+	<option value="2">Febrero</option>
+	<option value="3">Marzo</option>
+	<option value="4">Abril</option>
+	<option value="5">Mayo</option>
+	<option value="6">Junio</option>
+	<option value="7">Julio</option>
+	<option value="8">Agosto</option>
+	<option value="9">Septiembre</option>
+	<option value="10">Octubre</option>
+	<option value="11">Noviembre</option>
+	<option value="12">Diciembre</option>
+
+</select>
+                                    
+                                </div>
+                                <div class="id-col4">
+                                    <select name="ctl00$register_content$ucRegistro$ddlAnio" id="ddlAnio">
+	<option value="0">A&#241;o</option>
+	<option value="2005">2005</option>
+	<option value="2004">2004</option>
+	<option value="2003">2003</option>
+	<option value="2002">2002</option>
+	<option value="2001">2001</option>
+	<option value="2000">2000</option>
+	<option value="1999">1999</option>
+	<option value="1998">1998</option>
+	<option value="1997">1997</option>
+	<option value="1996">1996</option>
+	<option value="1995">1995</option>
+	<option value="1994">1994</option>
+	<option value="1993">1993</option>
+	<option value="1992">1992</option>
+	<option value="1991">1991</option>
+	<option value="1990">1990</option>
+	<option value="1989">1989</option>
+	<option value="1988">1988</option>
+	<option value="1987">1987</option>
+	<option value="1986">1986</option>
+	<option value="1985">1985</option>
+	<option value="1984">1984</option>
+	<option value="1983">1983</option>
+	<option value="1982">1982</option>
+	<option value="1981">1981</option>
+	<option value="1980">1980</option>
+	<option value="1979">1979</option>
+	<option value="1978">1978</option>
+	<option value="1977">1977</option>
+	<option value="1976">1976</option>
+	<option value="1975">1975</option>
+	<option value="1974">1974</option>
+	<option value="1973">1973</option>
+	<option value="1972">1972</option>
+	<option value="1971">1971</option>
+	<option value="1970">1970</option>
+	<option value="1969">1969</option>
+	<option value="1968">1968</option>
+	<option value="1967">1967</option>
+	<option value="1966">1966</option>
+	<option value="1965">1965</option>
+	<option value="1964">1964</option>
+	<option value="1963">1963</option>
+	<option value="1962">1962</option>
+	<option value="1961">1961</option>
+	<option value="1960">1960</option>
+	<option value="1959">1959</option>
+	<option value="1958">1958</option>
+	<option value="1957">1957</option>
+	<option value="1956">1956</option>
+	<option value="1955">1955</option>
+	<option value="1954">1954</option>
+	<option value="1953">1953</option>
+	<option value="1952">1952</option>
+	<option value="1951">1951</option>
+	<option value="1950">1950</option>
+	<option value="1949">1949</option>
+	<option value="1948">1948</option>
+	<option value="1947">1947</option>
+	<option value="1946">1946</option>
+	<option value="1945">1945</option>
+	<option value="1944">1944</option>
+	<option value="1943">1943</option>
+	<option value="1942">1942</option>
+	<option value="1941">1941</option>
+	<option value="1940">1940</option>
+	<option value="1939">1939</option>
+	<option value="1938">1938</option>
+	<option value="1937">1937</option>
+	<option value="1936">1936</option>
+	<option value="1935">1935</option>
+	<option value="1934">1934</option>
+	<option value="1933">1933</option>
+	<option value="1932">1932</option>
+	<option value="1931">1931</option>
+	<option value="1930">1930</option>
+	<option value="1929">1929</option>
+	<option value="1928">1928</option>
+	<option value="1927">1927</option>
+	<option value="1926">1926</option>
+	<option value="1925">1925</option>
+	<option value="1924">1924</option>
+	<option value="1923">1923</option>
+	<option value="1922">1922</option>
+	<option value="1921">1921</option>
+	<option value="1920">1920</option>
+
+</select>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="campo row">
+                            <label for="">Teléfono <span>a 10 digitos (opcional)</span></label>
+                            <div class="row">
+                                <div class="id-col4">
+                                    <input name="ctl00$register_content$ucRegistro$txtLada" type="text" maxlength="3" id="register_content_ucRegistro_txtLada" class="telefono" placeholder="Lada">
+                                    
+                                </div>
+                                <div class="id-col8">
+                                    <input name="ctl00$register_content$ucRegistro$txtTelefono" type="text" maxlength="8" id="register_content_ucRegistro_txtTelefono" class="telefono" placeholder="Teléfono">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Captcha aviso -->
+                        <section class="row">
+                            
+                            <div class="id-col6 captcha">
+                                <!-- Aquí va el captcha -->
+                                <div class="g-recaptcha" data-sitekey="6LdJOv8SAAAAAF0OBwKvPQAghojcOE14KpdtKpBP"></div>
+                           
+                            </div>
+                            
+                            <div class="id-col6 aviso-priv">
+                                <span>
+                                    <input id="cbRegTerminos" type="checkbox" name="ctl00$register_content$ucRegistro$cbRegTerminos">
+                                    
+                                </span>
+                                <p>
+                                    He leído y acepto la <a target="_blank" href="http://200.38.221.45:8080/ct/privacidad.pdf">Política de Privacidad</a> Cinépolis<sup>®</sup>.
+                                </p>
+                            </div>
+                        </section>
+
+                        <nav class="linea">
+                            <div class="btn-input float-left reg-salir">
+                                <a class="btn-id" href="index.aspx">
+                                    <span class="id-icon-flecha-izq"></span>
+                                    Regresar
+                                </a>
+                            </div>
+
+                            <div class="btn-input float-right">
+                                <input type="submit" name="ctl00$register_content$ucRegistro$btnRegistrar" value="Registrarme" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$register_content$ucRegistro$btnRegistrar&quot;, &quot;&quot;, true, &quot;registro&quot;, &quot;&quot;, false, false))" id="register_content_ucRegistro_btnRegistrar" class="btn-id">
+                                
+                                
+                                <span class="id-icon-flecha-der"></span>
+                            </div>
+                        </nav>
+                    </article>
+                </section>
+            </article>
+        </div>
+
+        <!-- Funciones -->
+        <script src="scripts/google.plus.registro.pkg.js"></script>
+        <script src="scripts/Validaciones.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('.tarjeta, .telefono').keydown(function (event) {
+                    return validaSoloNumeros(event);
+                });
+                $('.nombre, .apellidos').keydown(function (event) {
+                    return validaSoloLetras(event);
+                });
+            });
+        </script>
+    
+    <!-- Begin DAx cs.js import -->
+    <script type="text/javascript" src="//b.scorecardresearch.com/c2/9732062/ct.js"></script>
+    <!-- End DAx cs.js import -->
+    
+</body>
+</html>
+
+
+
+        
+    </div>
+    </form>
+</body>
+</html>

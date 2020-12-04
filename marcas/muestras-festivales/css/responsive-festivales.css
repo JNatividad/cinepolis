@@ -1,0 +1,26 @@
+@media screen and (max-width: 700px){.bgTop{height:250px;}
+.bgTop > div{position:relative;top:0 !important;height:250px}
+.contentWrapper{width:90%;margin:0 auto;}
+.contentWrapper article .col3,.contentWrapper article .col9{width:100%;float:none}
+.contentWrapper article .col9{margin:40px 0}
+.contentWrapper .contentfiltro,.contentWrapper .listaCarteleraHorario{width:100%;float:none;margin:0 0 2% 0}
+.contentWrapper .btnEnviar{margin-top:0}
+.contentWrapper .sinopsisCont .col3{width:23.5%;float:left}
+.contentWrapper .sinopsisCont .col9{width:74.5%;float:left;margin-left:2%}
+}@media screen and (max-width: 640px){section.header nav h2{float:left;width:20%}
+section.header nav ul{margin-top:2%}
+.carteleraActual ul.tituloPelicula li{max-height:250px;max-width:140px;margin:0;margin-bottom:2%;margin-right:2%;width:23%;height:auto}
+}@media screen and (max-width: 640px){.bgTop{height:200px;}
+.bgTop > div{position:relative;top:0 !important;height:200px}
+.contentWrapper aside > ul li.col4{width:100%;float:none;margin:10px 0;text-align:center}
+section .cartelera ul li{width:23%}
+.navOpciones li{font-size:.95em}
+.listaCarteleraHorario article .col4{min-width:60px}
+}@media screen and (max-width: 480px){.bgTop{height:130px;}
+.bgTop > div{position:relative;top:0 !important;height:130px}
+.tituloPelicula figure figcaption{background:url("../imagenes/bg-titulo-pelicula.png") 0 0;padding-top:60%;height:80% !important;font-size:11px;-khtml-opacity:1;-moz-opacity:1;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);bottom:0;line-height:13px}
+.ie .tituloPelicula figure figcaption{background:url("../imagenes/bg-titulo-pelicula.png") 0 0;padding-top:60%;height:80% !important;font-size:11px;-khtml-opacity:1;-moz-opacity:1;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);bottom:0;line-height:13px}
+.listaCarteleraHorario article .col4{min-width:60px}
+.navOpciones li{float:left;padding:10px 5px}
+section .cartelera ul li{width:30.5%}
+}

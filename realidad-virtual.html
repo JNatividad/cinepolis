@@ -1,0 +1,239 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<title>Experiencia Cinépolis VR</title>
+	<link href="css-1.css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="marcas/realidad-virtual/Resources/Content/css/jquery.fancybox.min.css" rel="stylesheet">
+
+	<link href="marcas/realidad-virtual/Resources/Content/css/style.css" rel="stylesheet">
+	<meta name="description" content="Elige tu juego y compra tus boletos para vivir una experiencia de realidad virtual.">
+	<meta property="og:title" content="Experiencia Cinépolis VR">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Elige tu juego y compra tus boletos para vivir una experiencia de realidad virtual.">
+	<meta property="og:url" content="https://www.cinepolis.com/realidad-virtual">
+	<meta property="og:image" content="https://static.cinepolis.com/marcas/realidad-virtual/realidad-virtual.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
+
+
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || []; w[l].push({
+					'gtm.start':
+						new Date().getTime(), event: 'gtm.js'
+				}); var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+						'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-M66T72');</script>
+		<!-- End Google Tag Manager -->
+
+
+
+</head>
+<body>
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="ns.html?id=GTM-M66T72" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+	
+
+<!-- General Loader -->
+<div class="vr-mainloader" id="particles-loader">
+	<figure class="vr-mainloader__logo">
+		<img src="realidad-virtual/Resources/Content/img/logos/lg-cinepolis-vr.svg" alt="Cinépolis® VR">
+	</figure>
+	<span class="vr-mainloader__copy">
+		Cargando...
+		<span class="vr-mainloader__progress"></span>
+	</span>
+	<div class="vr-mainloader__particles" id="particles-js"></div>
+</div>
+
+<!-- Landscape Message -->
+<div id="landscape">
+	<div id="landscape-table">
+		<div id="landscape-table-cell">
+			<div id="landscape-turn"></div>
+			<p id="gira-movil">{giraMovil}</p>
+		</div>
+	</div>
+</div>
+
+<header class="header">
+	<span class="exit"></span>
+	<div class="lg-vr">
+		<img src="realidad-virtual/Resources/Content/img/logos/lg-cinepolis-vr.svg" alt="Cinépolis VR">
+		<span class="slogan-home"></span>
+	</div>
+	<p class="top-description">Elige tu juego y compra tus boletos.</p>
+</header>
+
+<div class="wrapper">
+	<div class="fullscreen" id="video-container">
+		<video id="video-home" src="videos/genericos/vr/trailer-sitio.mp4" loop="" autoplay="" muted=""></video>
+		<audio id="audio" src="marcas/realidad-virtual/Resources/Content/audio/button1.mp3"></audio>
+	</div>
+
+	<section class="slider loaded">
+		<!-- Slider main container -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper" id="seccion-juegos">
+				
+			</div>
+		</div>
+	</section>
+
+	<div class="overlay"></div>
+	<section class="recommend">
+		<a class="back back-R">CERRAR</a>
+		<div class="recommend-title">Recomendaciones</div>
+		<div class="divider divider-R"><span class="icon-ico-arena"></span></div>
+		<ul class="recommend-list">
+			{recomendaciones}
+		</ul>
+		<figure class="recommend-img"><img src="marcas/realidad-virtual/Resources/Content/img/bg/img-recommend.jpg" alt="Guns"></figure>
+	</section>
+	<div class="overlay"></div>
+	<div class="ap-ov-slide">
+		<div class="ap-ov-holder">
+			<div class="ap-ov-area cf">
+				<section class="sales-slider"></section>
+				<section class="sales">
+					<a class="back back-L">CERRAR</a>
+					<div class="sales-title">Ventas corporativas</div>
+					<div class="divider divider-R"><span class="icon-ico-lobby"></span></div>
+					<div class="sales-info">
+						<p class="sales-text">Si buscas reconocer o desarrollar a tu equipo de trabajo con una increíble experiencia, <strong>Cinépolis VR</strong> ofrece a grupos un espacio único para organizar reuniones, eventos o convenciones. Contamos con paquetes de juego y alimentos ideales para que realices integraciones con tu equipo de trabajo, amigos o escuela.</p>
+						<p class="sales-text sales-tt">Entrenamiento corporativo</p>
+						<p class="sales-text">Reta a tu equipo fuera de la oficina para un perfecto team building con una sesión de realidad virtual. Ideal para el desarrollo de liderazgo y entretenimiento corporativo.</p>
+						<p class="sales-text sales-tt">Departamentos educativos</p>
+						<p class="sales-text">Combina las habilidades de los estudiantes y sus gustos en esta experiencia de inmersión total única.</p>
+					</div>
+					<div class="sales-footer">
+						<p>Para más información para organizar tu evento <strong>contacta:</strong> <strong class="sales-footer-number">55 11 05 55 00</strong></p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<section class="location">
+		<a class="back back-L">CERRAR</a>
+		<div class="location-title">Ubicación</div>
+		<div class="divider divider-L"><span class="icon-ico-lobby"></span></div>
+		<div class="location-map">
+			<div id="map"></div>
+		</div>
+		<div class="location-footer">
+			<p class="footer-title location-text-footer"></p>
+			<figure class="footer-img"><img class="footer-img-logo" src="realidad-virtual/Resources/Content/img/logos/lg-cinepolis-vr.svg" alt="Cinépolis VR"></figure><a class="footer-link" target="_blank">Aviso de Privacidad</a>
+		</div>
+	</section>
+
+	<section class="game">
+		<div class="game-cover">
+			<img class="game-cover-img" id="cover-juego" alt="Guns">
+			<a class="back back-G btn-back"></a>
+			<figure class="game-logo">
+				<img class="game-logo-img" id="logo-juego" alt="">
+				<a class="vrbtn vrbtn--game" data-fancybox="" id="trailer-juego" href="watch.html?v=_sI_Ps7JSEk">
+					<span class="vrbtn--game-hover btn-video"></span>
+				</a>
+			</figure>
+		</div>
+
+		<div class="game-description" data-format="Experiencia Lobbyy" id="experiencia">
+			<div class="game-description-content scroll">
+				<p class="game-title" id="titulo-juego"></p><span class="game-exp vrcade" id="logo-experiencia"></span>
+				<p class="game-players"><span class="icon-ico-info"></span> MAX <strong id="numero-jugadores"></strong></p>
+				<p class="game-sinopsis" id="sinopsis-juego">Una horda de zombies se aproxima. ¿Estás listo pasa derrotarlos? Con ayuda de un amigo será más difícil que te atrapen.</p><span class="game-divider"></span>
+				<div class="game-purchase" id="purchase-wrapper">
+					<div class="purchase-widget">
+						<div class="purchase-select">
+							<div class="purchase-select-item select">
+								<select class="select-control no-select" name="place" id="complejos">
+									<option value="" id="option-default"></option>
+									
+								</select>
+								
+							</div>
+						</div>
+
+						<h3 class="purchase-notickets">No hay horarios <br> disponibles.</h3>
+						<div class="purchase-dynamic">
+							<div class="purchase-date" id="purchase-date">
+								<header class="purchase-head">
+									<h1 class="purchase-title date-label">Selecciona una fecha disponible:</h1>
+								</header>
+								<div class="purchase-date-carousel carousel">
+									<a class="purchase-date-control carousel-left"></a><a class="purchase-date-control carousel-right"></a>
+									<div class="jcarousel" id="date-carousel">
+										<ul class="carousel-list lista-dias" id="fechas"></ul>
+									</div>
+								</div>
+							</div>
+							<div class="purchase-time" id="purchase-time">
+								<header class="purchase-head">
+									<h1 class="purchase-title hour-label">Selecciona la hora:</h1>
+								</header>
+								<div class="purchase-time-grid scroll" id="lista-horarios"></div>
+							</div>
+						</div>
+
+						<div class="purchase-loader">
+							<div class="purchase-loader-bg"></div>
+							<div class="purchase-loader-item purchase-loader-item--1"><span></span></div>
+							<div class="purchase-loader-item purchase-loader-item--2"><span></span></div>
+							<div class="purchase-loader-item purchase-loader-item--3"><span></span></div>
+							<div class="purchase-loader-item purchase-loader-item--4"><span></span></div>
+							<div class="purchase-loader-item purchase-loader-item--5"><span></span></div>
+							<div class="purchase-loader-item purchase-loader-item--6"><span></span></div>
+							<div class="purchase-loader-item purchase-loader-item--7"><span></span></div>
+							<div class="purchase-loader-item purchase-loader-item--8"><span></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<nav class="nav">
+		<div class="nav-first active"><a class="vrbtn--home vrbtn" href="#juegos" id="chooseGame">{copyBtnHome}</a></div>
+		<div class="nav-second">
+			<a href="#recomendaciones" style="color:white" class="vrbtn vrbtn--recommend" id="recommend"><span>RECOMENDACIONES</span></a>
+			<a style="color:white" class="vrbtn vrbtn--gallery" id="gallery">
+				<span>GALERÍA</span>
+			</a>
+
+
+				<a class="vrbtn vrbtn--sales" id="sales">
+					<span>VENTAS CORPORATIVAS</span>
+				</a>
+			<a href="#ubicaciones" style="color:white" class="vrbtn vrbtn--location" id="location">
+				<span>UBICACIÓN</span>
+			</a>
+
+				<a class="vrbtn vrbtn--found" href="cinepolisonline/photos/index.htm?tab=album&amp;album_id=10161406044340193" target="_blank" id="found">
+					<span>
+						<span class="vrbtn-txt">¡BUSCA TU FOTO!</span>
+						<span class="icon-facebook"></span>
+					</span>
+				</a>
+		</div>
+	</nav>
+</div>
+
+	<script src="jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script src="maps/api/js?key=AIzaSyAJKZd18uYKu_c8yAcj41o7D5R0Ft-voQg"></script>
+	<script src="marcas/realidad-virtual/Resources/Content/js/action-purchase.js"></script>
+	<script src="marcas/realidad-virtual/Resources/Content/js/dependencies.min.js"></script>
+	<script src="marcas/realidad-virtual/Resources/Content/js/output.min.js"></script>
+	<script src="marcas/realidad-virtual/Resources/Content/js/action-master.js"></script>
+</body>
+</html>

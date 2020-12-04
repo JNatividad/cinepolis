@@ -1,0 +1,8 @@
+﻿.vip header {background:#000;}
+.vip header .btnId{background:#222}
+.vip header .contentBusqueda #btnMenu,.vip header .contentBusqueda #btnBusqueda{border-right:solid 1px #222;}
+.vip header .contentBusqueda #btnMenu:hover, .vip header .contentBusqueda #btnBusqueda:hover{background:#222}
+.vip header .contentBusqueda #btnBusqueda{border-left:solid 1px #222}
+.vip #nav-spacer{height:78px}
+.vip #btnMenu{ visibility: hidden; }
+.vip .headlineRegistro, .vip .listaCarteleraHorario h2 { background:#000 }

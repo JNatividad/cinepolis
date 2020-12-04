@@ -1,0 +1,49 @@
+.tourcontrols,.tourcontrols2{position:fixed;top:150px;right:-500px;width:350px;background:#fff;color:#575757;font-size:16px;padding:10px;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;z-index:9999;-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);-ms-box-shadow:0 5px 10px rgba(0,0,0,0.2);-o-box-shadow:0 5px 10px rgba(0,0,0,0.2);box-shadow:0 5px 10px rgba(0,0,0,0.2);}
+.tourcontrols h3,.tourcontrols2 h3{margin:.8em 0 1em 0}
+.tourcontrols p,.tourcontrols2 p{padding:0 0 5px 0}
+.tourcontrols a,.tourcontrols2 a{font-size:11px;color:#f0f0f0;cursor:pointer;font-weight:normal;text-decoration:underline;margin:10px;}
+.tourcontrols a:hover,.tourcontrols2 a:hover{color:#fff}
+.tourcontrols .close,.tourcontrols2 .close{position:absolute;top:6px;right:10px;height:18px;padding-left:10px;border-left:solid 1px #e1e3e6;cursor:pointer}
+.btnTourView,.btnTour{background:#0b5ba1;margin:10px 0;-webkit-box-shadow:0 2px 0 #0b5393;-moz-box-shadow:0 2px 0 #0b5393;-ms-box-shadow:0 2px 0 #0b5393;-o-box-shadow:0 2px 0 #0b5393;box-shadow:0 2px 0 #0b5393;}
+.btnTourView:hover,.btnTour:hover{background:#0b5393}
+.btnCancel{background:#f5f5f5;color:#868788;margin:10px 0;-webkit-box-shadow:0 2px 0 #e1e3e6;-moz-box-shadow:0 2px 0 #e1e3e6;-ms-box-shadow:0 2px 0 #e1e3e6;-o-box-shadow:0 2px 0 #e1e3e6;box-shadow:0 2px 0 #e1e3e6;}
+.btnCancel:hover{background:#e1e3e6}
+.btnCancel{float:right}
+.btnTourView{float:left;}
+.btnTourView i{margin:0 5px}
+.tour-highlight{-webkit-box-shadow:0 0 7px 0 #29d;-moz-box-shadow:0 0 7px 0 #29d;-ms-box-shadow:0 0 7px 0 #29d;-o-box-shadow:0 0 7px 0 #29d;box-shadow:0 0 7px 0 #29d}
+.popover{position:absolute;color:#575757;top:0;left:0;z-index:1010;display:none;max-width:276px;padding:1px;text-align:left;background-color:#fff;-webkit-background-clip:padding-box;-moz-background-clip:padding;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.2);-webkit-border-radius:6px;-moz-border-radius:6px;-ms-border-radius:6px;-o-border-radius:6px;border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);-ms-box-shadow:0 5px 10px rgba(0,0,0,0.2);-o-box-shadow:0 5px 10px rgba(0,0,0,0.2);box-shadow:0 5px 10px rgba(0,0,0,0.2);white-space:normal}
+.popover.top{margin-top:-10px}
+.popover.right{margin-left:10px}
+.popover.bottom{margin-top:10px}
+.popover.left{margin-left:-10px}
+.popover-title{margin:0;padding:8px 14px;font-size:14px;font-weight:normal;line-height:18px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-ms-border-radius:5px 5px 0 0;-o-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}
+.popover-title:empty{display:none}
+.popover-content{padding:9px 14px}
+.popover .arrow,.popover .arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}
+.popover .arrow{border-width:11px}
+.popover .arrow:after{border-width:10px;content:""}
+.popover.top .arrow{left:50%;margin-left:-11px;border-bottom-width:0;border-top-color:#999;border-top-color:rgba(0,0,0,0.25);bottom:-11px}
+.popover.top .arrow:after{bottom:1px;margin-left:-10px;border-bottom-width:0;border-top-color:#fff}
+.popover.right .arrow{top:50%;left:-11px;margin-top:-11px;border-left-width:0;border-right-color:#999;border-right-color:rgba(0,0,0,0.25)}
+.popover.right .arrow:after{left:1px;bottom:-10px;border-left-width:0;border-right-color:#fff}
+.popover.bottom .arrow{left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,0.25);top:-11px}
+.popover.bottom .arrow:after{top:1px;margin-left:-10px;border-top-width:0;border-bottom-color:#fff}
+.popover.left .arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,0.25)}
+.popover.left .arrow:after{right:1px;border-right-width:0;border-left-color:#fff;bottom:-10px}
+.popover{padding:0;}
+.popover .popover-content{padding:10px 0 0 0;}
+.popover .popover-content p{margin:10px 8px 10px 8px}
+.popover .popover-content a.btnCiudades{color:#0b5ba1;text-decoration:underline}
+.popover .popover-content .action-label{background:rgba(0,111,255,0.169);font-size:14px;padding:3px 10px}
+.popover .popover-content .tour-counter{margin:0;padding:0;position:absolute;left:10px;bottom:12px;font-size:11px;color:#acacac}
+.popover .tour-buttons{padding:8px 10px;min-height:27px;background:#f5f5f5;-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;-ms-border-radius:0 0 6px 6px;-o-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;text-align:right;}
+.popover .tour-buttons .btn{background:#0b5ba1}
+.popover .btn-close{background:none;border:none;position:absolute;top:4px;right:7px;padding:0;-khtml-opacity:.3;-moz-opacity:.3;opacity:.3;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30);color:#000;}
+.popover .btn-close:hover{-khtml-opacity:.5;-moz-opacity:.5;opacity:.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50)}
+.qtip-tour .qtip-content{padding:0}
+.qtip-tour .qtip-content{padding-top:10px;}
+.qtip-tour .qtip-content p{margin:0 8px 10px 8px}
+.qtip-tour .qtip-content .action-label{background:rgba(0,111,255,0.169);font-size:14px;padding:3px 10px}
+.qtip-tour .qtip-content .tour-counter{font-size:11px;color:#acacac}
+.qtip-tour .tour-buttons{padding:8px 10px;min-height:27px;background:#f5f5f5;-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;-ms-border-radius:0 0 6px 6px;-o-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px}

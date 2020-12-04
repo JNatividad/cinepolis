@@ -1,0 +1,24 @@
+section{position:relative;margin-bottom:40px;}
+section.inicio{height:334px;width:100%;z-index:1;}
+section.inicio article{position:relative;width:100%;height:100%;overflow:hidden;}
+section.inicio article figure{width:100%;height:100%;}
+section.inicio article figure img{width:100%;display:block;max-width:1920px}
+section.aperturas .item{width:100%;height:318px;}
+section.aperturas .item img{width:100%;display:block;max-width:1920px}
+section.aperturas .item figcaption{position:absolute;z-index:9;left:50%;margin-left:-465px;}
+section.aperturas .item figcaption h2{color:#fff;font-size:2.5em;margin-top:50px}
+section.aperturas .item figcaption p{color:#fff}
+section.bienvenida{z-index:1;text-align:center;}
+section.bienvenida figure{margin-top:-90px}
+section.bienvenida figcaption{color:#0b5ba1;font-size:18px;margin:30px 0 45px 0}
+section.bienvenida article{position:relative;padding:0;}
+section.bienvenida article nav{margin-bottom:40px;}
+section.bienvenida article nav ul{margin:0;padding:0;height:70px;}
+section.bienvenida article nav ul li{width:25%;float:left;font-size:1.5em;color:#0b5ba1;line-height:70px;text-align:center;text-transform:uppercase;}
+section.bienvenida article nav ul li:hover{color:#a6afbe}
+section.bienvenida article nav ul li + li{border-left:solid 1px #0b5ba1}
+section.bienvenida article h2{margin:0 0 .5em 0;line-height:1.3em;color:#002957;font-weight:normal;font-size:2.3em}
+section.bienvenida article h4{font-weight:bolder;color:#000;margin:0}
+section.bienvenida article .btnComprarBoletos{background:#0b5ba1;width:100%;font-size:1.2em}
+section.bienvenida article .video-js{height:311px !important}
+section.bienvenida article .borderRight{border-right:1px solid #ccc;height:260px;margin-top:20px}

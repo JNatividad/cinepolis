@@ -1,0 +1,103 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<!--[if lt IE 7 ]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7 ]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta name="description" content="sitio Cinépolis Jobs">
+    <meta name="keywords" content="">
+    <meta name="author" content="IA Interactive">
+    <title>Cinépolis Jobs</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/css/style.css">
+</head>
+<body>
+    <section class="to-location">
+        <div class="to-content">
+            <h1 class="to-logo"><img src="/Content/img/lg-c-jobs.svg" alt="Cinépolis Jobs"></h1>
+            <p class="to-copy">"El trabajo de tus sueños no está en las películas, está aquí."</p>
+            <div class="to-container">
+                <div class="to-section">
+                    <div class="to-section-cinepolis">
+                        <h2 class="to-section-logo"><img src="/Content/img/lg/lg-cinepolis-b.svg" alt="Cinépolis"></h2>
+                        <ul class="to-section-list">
+                            <li><a href="" class="setlocation" data-country="mexico">México</a></li>
+                            <li><a href="" class="setlocation" data-country="estados-unidos">Estados unidos</a></li>
+                            <li><a href="" class="setlocation" data-country="brasil">Brasil</a></li>
+                            <li><a href="" class="setlocation" data-country="india">India</a></li>
+                            <li><a href="" class="setlocation" data-country="guatemala">Guatemala</a></li>
+                            <li><a href="" class="setlocation" data-country="costa-rica">Costa Rica</a></li>
+                            <li><a href="" class="setlocation" data-country="el-salvador">El Salvador</a></li>
+                            <li><a href="" class="setlocation" data-country="honduras">Honduras</a></li>
+                            <li><a href="" class="setlocation" data-country="colombia">Colombia</a></li>
+                            <li><a href="" class="setlocation" data-country="panama">Panamá</a></li>
+                            <li><a href="" class="setlocation" data-country="peru">Perú</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="to-section">
+                    <div class="to-section-yelmo">
+                        <h2 class="to-section-logo"><img src="/Content/img/lg/lg-yelmo-cines-b.svg" alt="Yelmo"></h2>
+                        <ul class="to-section-list">
+                            <li><a href="" class="setlocation" data-country="espana">España</a></li>
+                        </ul>
+                    </div>
+                    <div class="to-section-hoyts">
+                        <h2 class="to-section-logo"><img src="/Content/img/lg/lg-hoyts-b.svg" alt="Cine Hoyts"></h2>
+                        <ul class="to-section-list">
+                            <li><a href="" class="setlocation" data-country="chile">Chile</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="to-section">
+                    <div class="to-section-village">
+                        <h2 class="to-section-logo"><img src="/Content/img/lg/lg-village-b.svg" alt="Village"></h2>
+                        <ul class="to-section-list">
+                            <li><a href="" class="setlocation" data-country="argentina">Argentina</a></li>
+                        </ul>
+                    </div>
+                    <div class="to-section-fun">
+                        <h2 class="to-section-logo"><img src="/Content/img/lg/lg-fun-b.svg" alt="Fun Cinemas"></h2>
+                        <ul class="to-section-list">
+                            <li><a href="" class="setlocation" data-country="india">India</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<form action="/asignar-ubicacion" id="formLocation" method="post" name="formLocation"><input id="country" name="country" type="hidden" value="" /></form>
+    <script>
+        $(".setlocation").on('click', function (e) {
+            e.preventDefault;
+            var country = $(this).attr("data-country");
+            $("#country").val(country);
+
+            $("#formLocation").submit();
+            return false;
+        });
+
+    </script>
+        <script src="/Content/js/dependencies.min.js"></script>
+        <script src="/Content/js/assets.js"></script>
+        <script src="/Content/js/forms.js"></script>
+        <script src="/Content/js/loader.js"></script>
+        <script src="/Content/js/mapa.js"></script>
+        <script src="/Content/js/modal.js"></script>
+        <script src="/Content/js/nav.js"></script>
+        <script src="/Content/js/slider.js"></script>
+    </body>
+</html>

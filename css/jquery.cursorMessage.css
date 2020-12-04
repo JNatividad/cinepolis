@@ -1,0 +1,13 @@
+/* Generic context menu styles */
+#cursorMessageDiv {
+	position: absolute;
+	z-index: 99999;
+	border: solid 2px #fff;
+	background: #000;
+	padding: 8px;
+	margin: 0px;
+	display: none;
+	font-size:11px;
+	font-weight:bold;
+    color:#fff;
+}
